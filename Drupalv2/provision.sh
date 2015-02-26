@@ -123,8 +123,12 @@ echo 'Installing rules module'
 drush en -y rules
 echo 'Installing services module'
 drush en -y services
-echo 'Installing janrain_capture module'
-drush en -y janrain_capture janrain_capture_screens janrain_capture_ui janrain_capture_mapping
+
+
+#echo 'Installing janrain_capture module'
+#drush en -y janrain_capture janrain_capture_screens janrain_capture_ui janrain_capture_mapping
+
+
 echo 'generating data'
 drush en -y devel
 drush en -y devel_generate
@@ -135,8 +139,7 @@ drush genc 500 5
 drush genm
 drush genu 50
 
-#use this code only for enabling and deploying the janrain v2 module
-#drush en -y janrain
+
 
 #make sure apache/drupal own the web tree
 chown -R vagrant.vagrant /var/www
