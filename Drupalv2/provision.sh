@@ -136,7 +136,7 @@ drush genm
 drush genu 50
 
 #use this code only for enabling and deploying the janrain v2 module
-drush en -y janrain
+#drush en -y janrain
 
 #make sure apache/drupal own the web tree
 chown -R vagrant.vagrant /var/www
